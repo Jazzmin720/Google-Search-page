@@ -42,7 +42,6 @@ color:green;
 }
 /*search bar*/
 .header-container{
-    width:1000px;
     margin:auto;
     padding:0;
     margin:0;
@@ -51,13 +50,14 @@ color:green;
     display:flex;
     justify-content: space-between;
     padding-left:20px;
+    cursor: pointer;
 }
 .search-icons{
     display:flex;
     width:var(--size-100);
     height:var(--size-50);
     top:1.5625rem;
-    transform:translate(-6.25rem,0.75rem);
+    transform:translate(-6.25rem,1rem);
 }
 #search{
     border-radius:var(--size-20);
@@ -65,9 +65,28 @@ color:green;
     height:var(--size-30);
     top:var(--size-20);
     transform:translateY(0.625rem);
+    padding:5px;
 }
-
+#clearButton{
+    width:30px;
+    height:30px;
+    border:none;
+}
+#clearIcon{
+    transform:translate(-10px,-2px);
+    pointer-events:none;
+}
 #clearIcon,#micIcon,#searchIcon{
     width:30px;
     height:30px;
+}
+#appsIcon,#profile{
+    width:40px;
+    height:40px;
+    transform:translateY(10px);
+}
+.menu-profile-container{
+    display:flex;
+    flex-direction:row;
+    
 }
