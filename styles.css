@@ -15,7 +15,7 @@
 
 /*header*/
 .header-container{
-    
+    display:flex;
 }
 .google{
     display:flex;
@@ -39,4 +39,24 @@ color:yellow;
 }
 .l{
 color:green;
+}
+/*search bar*/
+.search-bar{
+    display:flex;
+}
+.search-icons{
+    display:flex;
+}
+#search{
+    border-radius:var(--size-20);
+    width:37.5rem;
+    height:var(--size-30);
+}
+.clear{
+    right:20px;
+}
+#clearIcon,#micIcon,#searchIcon{
+    width:30px;
+    height:30px;
+    
 }
