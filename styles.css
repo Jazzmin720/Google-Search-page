@@ -62,39 +62,89 @@ color:green;
     padding-left:20px;
     cursor: pointer;
     width:100vw;
-    position:relative;
-}
-.search-icons{
-    display:flex;
-    width:var(--size-100);
-    height:var(--size-50);
-    position:absolute;
-    top:12px;
-    justify-content: flex-end;
     
-    width:400px;
- 
-   
 }
 #search{
     border-radius:var(--size-20);
-    width:37.5rem;
+    width:43.75rem;
     height:var(--size-30);
     top:var(--size-20);
     transform:translateY(0.625rem);
     padding:5px;
+    position:relative;
 }
-#clearButton{
-    width:30px;
-    height:30px;
-    border:none;
+.clear{
+    margin-top:32px;
+    margin-right:-300px;
+    position:absolute;
+    padding-right:30px;
+}
+.mic{
+    margin-top:32px;
+    margin-right:-350px;
+    position:absolute;
+    padding-right:10px;
+}
+.search{
+    margin-top:32px;
+    margin-right:-400px;
+    position:absolute;
     
-}
-#clearIcon{
-    transform:translate(-10px,-2px);
-    pointer-events:none;
 }
 #clearIcon,#micIcon,#searchIcon{
     width:40px;
-    height:40px;
+    
+}
+/*media queries*/
+@media screen and (max-width:1300px){
+    #search{width:650px;}
+}
+@media screen and (max-width:1200px){
+    #search{width:600px;}
+}
+@media screen and (max-width:1000px){
+    #search{width:550px;}
+}
+@media screen and (max-width:600px){
+    .clear{margin-right:-200px;}
+    .mic{margin-right:-250px;}
+    .search{margin-right:-300px;}
+}
+@media screen and (max-width:500px){
+.clear{
+    margin-top:32px;
+    margin-right:-100px;
+    position:absolute;
+    padding-right:30px;
+}
+.mic{
+    margin-top:32px;
+    margin-right:-150px;
+    position:absolute;
+    padding-right:10px;
+}
+.search{
+    margin-top:32px;
+    margin-right:-200px;
+    position:absolute;
+    }
+}
+@media screen and (max-width:400px){
+    .clear{
+        margin-top:32px;
+        margin-right:-10px;
+        position:absolute;
+        padding-right:30px;
+    }
+    .mic{
+        margin-top:32px;
+        margin-right:-50px;
+        position:absolute;
+        padding-right:10px;
+    }
+    .search{
+        margin-top:32px;
+        margin-right:-100px;
+        position:absolute;
+    }
 }
