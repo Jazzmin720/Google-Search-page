@@ -51,18 +51,36 @@ color:green;
     
 }
 /*search bar*/
+.search-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+   
+  
+    cursor: pointer;
+    width:100vw;
+    margin-left:50px;
+   
+}
 .header-container{
     margin:auto;
     padding:0;
     margin:0;
+    padding-right:50px;
 }
-.search-bar{
+.header-search{
     display:flex;
-    justify-content: space-around;
-    padding-left:20px;
-    cursor: pointer;
-    width:100vw;
-    
+    flex-direction:row;
+    justify-content: flex-start;
+    margin-left:50px;
+    margin-top:20px;
+}
+.menu-profile-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    margin-right:50px;
+    margin-top:20px;
 }
 #search{
     border-radius:var(--size-20);
@@ -71,80 +89,7 @@ color:green;
     top:var(--size-20);
     transform:translateY(0.625rem);
     padding:5px;
-    position:relative;
-}
-.clear{
-    margin-top:32px;
-    margin-right:-300px;
-    position:absolute;
-    padding-right:30px;
-}
-.mic{
-    margin-top:32px;
-    margin-right:-350px;
-    position:absolute;
-    padding-right:10px;
-}
-.search{
-    margin-top:32px;
-    margin-right:-400px;
-    position:absolute;
     
 }
-#clearIcon,#micIcon,#searchIcon{
-    width:40px;
-    
-}
+x
 /*media queries*/
-@media screen and (max-width:1300px){
-    #search{width:650px;}
-}
-@media screen and (max-width:1200px){
-    #search{width:600px;}
-}
-@media screen and (max-width:1000px){
-    #search{width:550px;}
-}
-@media screen and (max-width:600px){
-    .clear{margin-right:-200px;}
-    .mic{margin-right:-250px;}
-    .search{margin-right:-300px;}
-}
-@media screen and (max-width:500px){
-.clear{
-    margin-top:32px;
-    margin-right:-100px;
-    position:absolute;
-    padding-right:30px;
-}
-.mic{
-    margin-top:32px;
-    margin-right:-150px;
-    position:absolute;
-    padding-right:10px;
-}
-.search{
-    margin-top:32px;
-    margin-right:-200px;
-    position:absolute;
-    }
-}
-@media screen and (max-width:400px){
-    .clear{
-        margin-top:32px;
-        margin-right:-10px;
-        position:absolute;
-        padding-right:30px;
-    }
-    .mic{
-        margin-top:32px;
-        margin-right:-50px;
-        position:absolute;
-        padding-right:10px;
-    }
-    .search{
-        margin-top:32px;
-        margin-right:-100px;
-        position:absolute;
-    }
-}
