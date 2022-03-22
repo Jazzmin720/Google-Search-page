@@ -58,8 +58,6 @@ color:green;
     cursor: pointer;
     width:1300px;
     margin:0;
-
-    
 }
 .header-container{
      margin-right:50px;
@@ -85,12 +83,14 @@ color:green;
     padding-right:12px;
 }
 #searchGlass{
-    margin-top:2px;
+    margin-top:8px;
+    width:32px;
+    height:25px;
 }
 #mic{
     margin-top:2px;
 }
- #mic,#searchGlass{
+ #mic{
      width:40px;
      height:40px;
  }
@@ -112,13 +112,23 @@ color:green;
     top:var(--size-20);
     transform:translateY(0.625rem);
     padding:5px;
+    border:1px solid lightgray;
 }
 /*search bar links*/
 .search-bar-links{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    margin-top:50px;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:25px;
+    padding-bottom:20px;
+    margin-left:100px;
+    margin-right:100px;
+}
+.search-bar-links a{
+    text-decoration: none;
+    color:#5f6368;
 }
 .settings-section{
     display:flex;
@@ -126,6 +136,30 @@ color:green;
 }
 .settings{
     padding-right:20px;
+}
+/*search bar icons*/
+#searchAll,#images,#news{
+    width:15px;
+    height:15px;
+    padding-right:10px;
+}
+#videos,#shopping{
+    width:15px;
+    height:15px;
+    padding-right:5px;
+}
+#more{
+    width:12px;
+    height:12px;
+    padding-right:5px;
+}
+hr{
+    margin-top:0;
+    color: #ddd;
+    background-color: #ddd;
+    height: 1px;
+    border: none;
+    max-width: 100%;
 }
 
 
